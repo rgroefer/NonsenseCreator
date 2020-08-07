@@ -83,13 +83,6 @@ function New-NonsenseWord
                 Default {"huh"}
             }
         }
-
-        # 1..$NumOfVowels | ForEach-Object -Process {
-        #     $Letters.Add( [vowel]::new($false).Letter ) | Out-Null
-        # }
-        # $NumOfVowels..$Length | ForEach-Object -Process {
-        #     $Letters.Add( [lowercase]::new().Letter ) | Out-Null
-        # }
     }
     Write-Output ($Letters -join '')
 }
